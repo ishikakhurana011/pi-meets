@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto Slab', serif;
+ 
+    background-image: url("background.png");
+    background-size: 50%;
+}
+
+.board-header{
+    position: fixed;
+    left: 10vw;
+    top: 8vh;
+    z-index: +1;
+}
+
+
+#myCanvas{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 84vh;
+    width: 84vw;
+    top: 8vh;
+    left: 8vw;
+    border-radius: 10px;
+    box-shadow: -2px -2px 45px 0px rgba(0,0,0,0.35);
+}
+
+#colorpick{
+    position: fixed;
+    left: 30vw;
+    top: 11vh;
+    z-index: +1;
+}
+
+#colorpick:hover{
+    cursor: pointer;
+}
+
+#apply{
+    position: fixed;
+    left: 37vw;
+    top: 12vh;
+    z-index: +1;
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+    border: none;
+}
+
+#apply:hover{
+    cursor: pointer;
+}
+
+#eraser{
+    position: fixed;
+    left: 46vw;
+    top: 12vh;
+    z-index: +1;
+}
+
+#eraser:hover{
+    cursor: pointer;
+}
+
+#clear{
+    position: fixed;
+    left: 50vw;
+    top: 12vh;
+    z-index: +1;
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+    border: none;
+}
+
+#clear:hover{
+    cursor: pointer;
+}

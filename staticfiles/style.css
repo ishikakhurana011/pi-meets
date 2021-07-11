@@ -1,0 +1,258 @@
+       video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: -2px -2px 45px 0px rgba(0,0,0,0.35);
+        }
+
+
+        /* add display grid */
+        #video-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 320px);
+            grid-auto-rows: 250px;
+            grid-column-gap: 6px;
+            grid-row-gap: 6px;
+            padding: 15px 10px 15px 35px;
+        }
+
+
+        body{
+           margin: 0;
+           height: 100vh;
+           width: 100vw;
+           font-family: 'Roboto Slab', serif;
+
+           background-image: url("background.png");
+           background-size: 50%;
+        }
+
+
+
+        #main-divs{
+           display: flex;
+           height: 100vh;
+           
+        }
+
+
+        #footer-block{
+           position: fixed;
+           background: white;
+           display: flex;
+           height: 45px;
+           width: 94.5vw;
+           border-radius: 10px;
+           bottom: 3px;
+           margin-left: 5px;
+           margin-right: 5px;
+           box-shadow: -2px -2px 45px 0px rgba(0,0,0,0.35);
+           justify-content: space-between;
+           align-items: center;
+           padding-left: 30px;
+           padding-right: 30px;
+        }
+
+        #footer-block:hover{
+            z-index: +1;
+            transition: z-index 10s;
+        }
+
+
+        #toggle-buttons{
+            width: 88px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            right: 70px;
+        }
+
+        #muteButton{
+            padding: 12px;
+            border-radius: 50%;
+        }
+
+        #muteButton:hover{
+            color: #c21010;
+            background-color: #d5d8de;
+            
+        }
+
+        #vid-icon{
+           padding: 12px;
+           border-radius: 50%;
+        }
+
+        #vid-icon:hover{
+            color: #c21010;
+            background-color: #d5d8de;
+        }
+
+
+        #end-call-button{
+           padding: 5px;
+           border-radius: 50%;
+        }
+
+
+        #end-call-button:hover{
+            color: white;
+            background-color: red;
+        }
+
+
+        #footer-left-side{
+            left: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+        #copy-button{
+            padding: 12px;
+           border-radius: 50%;
+        }
+
+        #copy-button:hover{
+            color: #c21010;
+            background-color: #d5d8de;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+
+         #chat-button{
+            padding: 12px;
+           border-radius: 50%;
+        }
+
+        #chat-button:hover{
+            color: #c21010;
+            background-color: #d5d8de;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+
+         #board-button{
+           padding: 12px;
+           border-radius: 50%;
+        }
+
+        #board-button:hover{
+            color: #c21010;
+            background-color: #d5d8de;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+
+
+         #copy-button:before{
+            content: "Copied ✔";
+            position: absolute;
+            bottom: 50px;
+            left: 28px;
+            background:rgb(240, 240, 240);
+            border-radius: 20px;
+            font-size: 8px;
+            padding: 5px;
+            color: rgb(160, 160, 160);
+            display: none;
+         }
+
+         #copy-button.active:before{
+            display: inline-block;
+         }
+
+         #div1{
+           /* display: inline-block; */
+
+         display: flex;
+         flex-direction: column;
+         flex: 0.8;
+         order: 1;
+        }
+ 
+
+        #chatbox{
+         position: fixed;
+         display: flex;
+         flex-direction: column;
+         background-color: white;
+         flex: 0.2;
+         order: 2;
+         height: 99vh;
+         right: 3px;
+         bottom: 3px;
+         top: 3px;
+         
+
+         border-radius: 10px;
+         box-shadow: -2px -2px 45px 0px rgba(0,0,0,0.35);
+
+        }
+
+
+        .chat-header{
+           text-align: center;
+           padding: 0;
+           margin: 0;
+           height: 40px;
+        }
+
+        .in-call-messages{
+            margin: 15px 0px 15px 0px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .message-list{
+         list-style-type:none;
+         padding: 6px;
+         font-size: 10px;
+         margin-top: 0;
+        }
+
+        #chat-window{
+            margin:4px, 4px;
+                padding:4px;
+                background-color: white;
+                width: 220px;
+                height: 82%;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align:justify;
+                word-wrap: break-word;
+        }
+
+
+        .input-message{
+           position: fixed;
+           right: 13px;
+           bottom: 12px;
+           padding: 8px;
+           background-color: #f1f3f4;
+           border-radius: 20px;
+           display: flex;
+           flex-direction: row;
+           position: fixed;
+           margin: 0 auto;
+        }
+
+        #take-input{
+           border-style: none;
+           width: 159px;
+           outline: none;
+           background-color: #f1f3f4;
+           font-size: 10px;
+           text-align: center;
+        }
+
+        .send-button{
+            border-style: none;
+            background-color: #f1f3f4;
+        }
+
+        .send-button :hover{
+            color: #125D98;
+        }

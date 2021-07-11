@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pi Meets </title>
+
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCJ9L-6fW0Yg2DKz1a_yvtae5UdX5_gZhk",
+            authDomain: "teams-clone-dc6b8.firebaseapp.com",
+            projectId: "teams-clone-dc6b8",
+            storageBucket: "teams-clone-dc6b8.appspot.com",
+            messagingSenderId: "766530244770",
+            appId: "1:766530244770:web:1c17533222fedff18e87fb",
+            measurementId: "G-8JC1GCKZV5"
+        }
+
+    </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js">   </script>
+
+
+    <script src="introduction.js" defer></script>
+    <script src="toggle-buttons.js" type="text/javascript" defer></script>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js.map"></script> -->
+    <script src="./peerjs.min.js"></script>
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="pie-image-icon2.ico" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+
+
+    <script>
+        const ROOM_ID = " <%= roomId %> ";
+    </script>
+
+
+
+</head>
+
+
+<body>
+
+    <div id="main-divs">
+
+        <div id="div1">
+            <div id="video-grid"> </div>
+
+            <div id="footer-block">
+                <div id="footer-left-side">
+                    <div id="copy-button" onclick="setClipboard()">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <div id="chat-button" onclick="goToChatRoom()">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <div id="board-button" onclick="whiteBoard()">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                </div>
+
+                <div id="toggle-buttons">
+                    <div id="muteButton" onclick="muteUnmute()">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+
+                    <div id="end-call-button" onclick="endCall()">
+                        <span class="iconify" data-icon="mdi-phone-hangup" data-inline="false" id="end-call-button"></span>
+                   </div>
+
+                    <div id="vid-icon" onclick="playStop()">
+                        <i class="fas fa-video"></i>
+                    </div>
+
+
+                </div>
+
+                <div id="footer-right-side">
+                    <p> </p>
+                </div>
+            </div>
+
+
+
+            <div id="chatbox">
+
+                <div class="chat-header">
+                    <p class="in-call-messages"> In-call Messages </p>
+                </div>
+
+                <div id="chat-window">
+                    <ul class="message-list" id="messages">
+
+                    </ul>
+                </div>
+
+                <div class="input-message">
+                    <input id="take-input" type="text" placeholder="Send a message to the team">
+
+                    <button class="send-button" type="submit" onclick="buttonHandler()">
+                  <i class="fas fa-paper-plane" id="send-button"></i>
+               </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+
+
+</html>

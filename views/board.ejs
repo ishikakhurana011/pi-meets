@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pi Draws </title>
+
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+
+    </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js">   </script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="/board-style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+   <script>
+        const ROOM_ID = " <%= roomId %> ";
+    </script>
+
+
+
+</head>
+
+
+<body>
+
+    <div id="main-divs">
+        <div class="board-header">
+            <h3 class="heading"> Collaborative Whiteboard</h3>
+        </div>
+
+        <canvas id="myCanvas">
+
+        </canvas>
+        <script src="/board-script.js"></script>
+
+        <input type="color" id="colorpick" value="#FF0000">
+        <i class="fas fa-eraser" id="eraser" onclick="erasePixel()"></i>
+        <button id="apply" onclick="applyChange()">Apply Color</button>
+        <button id="clear" onclick="clearCanvas()">Clear Canvas</button>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-image: url("background.png");
+    background-size: 50%;
+}
+
+#you{
+    height: 18vh;
+    width: 21vw;
+    position: absolute;
+    top: 35vh;
+    left: 28vw;
+}
+
+#left{
+    height: 18vh;
+    width: 22vw;
+    left: 39.5vw;
+    top: 35vh;
+    position: absolute;
+    
+}
+
+#the{
+    height: 18vh;
+    width: 22vw;
+    left: 50vw;
+    top: 35vh;
+    position: absolute;
+}
+
+#meet{
+    height: 18vh;
+    width: 25vw;
+    left: 59.8vw;
+    top: 35vh;
+    position: absolute;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pi Meets </title>
+    <link rel="stylesheet" href="home-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">    
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <canvas id="logo"></canvas>
+
+    <canvas id="meets"></canvas>
+    <script src="home-script.js" ></script>
+    
+        
+        <div id="new-room" class = "flip" onclick="openNewRoom()">            
+            <div id="front-new">                
+                <img src="new-room-img.png" id="create-new-img">
+            </div>
+            <div id="back-new">
+                <img src="new-back-page.jpg" id="new-back-img">
+            </div>
+         </div>
+
+         <div id="existing-room" class= "flip">
+             
+            <div id="front-existing">
+               <img src="existing-room-img.png" id="existing-room-img">
+            </div>
+
+            <div id="back-existing"  >
+                <img src="existing-back-img.png" id="existing-back-img">
+                <div class="input-box">
+                    <input type="text" class="input-room" id = "input-room-video" placeholder="Enter room id">
+                 </div>  
+            </div> 
+        </div>
+
+
+         <div id="new-chat" class= "flip" onclick="openNewChatRoom()">
+             
+            <div id="new-chat-front">
+               <img src="chat-room-front.png" id="new-chat-front-img">
+            </div>
+
+            <div id="new-chat-back">
+                <img src="new-back-page.jpg" id="new-chat-back-img">
+            </div>
+
+        </div>
+
+
+        <div id="existing-chat" class= "flip">
+             
+            <div id="existing-chat-front">
+               <img src="existing-chat-front.png" id="existing-chat-front-img">
+            </div>
+
+            <div id="existing-chat-back"  >
+                <img src="existing-back-img.png" id="existing-chat-back-img">
+                <div class="input-box">
+                    <input type="text" class="input-room" id="input-room-chat" placeholder="Enter room id">
+                 </div>  
+            </div> 
+        </div>
+        
+
+
+
+</body>
+</html>

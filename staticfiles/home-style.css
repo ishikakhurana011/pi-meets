@@ -1,0 +1,227 @@
+body{
+    background-image: url("background.png");
+    background-size: 50%;
+    font-family: 'Roboto Slab', serif;
+}
+
+#logo{
+    position: absolute;
+    left: 38vw;
+    top: 20vh;
+}
+
+#meets{
+    position: absolute;
+    left: 46vw;
+    top: 20vh;
+}
+
+#new-room{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    height: 228px;
+    width: 158px;
+    position: absolute;
+    left: 9vw;
+    top: 45vh;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.35);
+    background-clip: content-box;
+}
+
+#create-new-img{
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+#new-back-img{
+    position: relative;
+    top: -234px;
+    border-radius: 9px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+.flip:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 190px;
+}
+
+
+#front-new {
+    backface-visibility: hidden;
+
+}
+
+#back-new {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+}
+
+
+
+#existing-room{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    height: 230px;
+    width: 160px;
+    position: absolute;
+    left: 32vw;
+    top: 45vh;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.35);
+    background-clip: content-box;
+}
+
+
+#front-existing {
+    backface-visibility: hidden;
+    /* transform: rotateY(180deg); */
+
+}
+
+#back-existing {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+}
+
+#existing-room-img{
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+#existing-back-img{
+    position: relative;
+    top: -234px;
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+#new-chat{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    height: 230px;
+    width: 160px;
+    position: absolute;
+    left: 54vw;
+    top: 45vh;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.35);
+    background-clip: content-box;
+}
+
+
+#new-chat-front{
+    backface-visibility: hidden;
+
+}
+
+#new-chat-back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+}
+
+#new-chat-front-img{
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+#new-chat-back-img{
+    position: relative;
+    top: -234px;
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+
+
+#existing-chat{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    height: 230px;
+    width: 160px;
+    position: absolute;
+    left: 76vw;
+    top: 45vh;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.35);
+    background-clip: content-box;
+}
+
+
+#existing-chat-front{
+    backface-visibility: hidden;
+
+}
+
+#existing-chat-back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+}
+
+#existing-chat-front-img{
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+#existing-chat-back-img{
+    position: relative;
+    top: -234px;
+    border-radius: 7px;
+    height: 230px;
+    width: 160px;
+    display: inline-block;
+}
+
+
+
+
+
+.input-room{
+    position: relative;
+    font-size: 7px;
+    width: 80px;
+}
+
+
+.input-box{
+    position: relative;
+    top: -298px;
+}
